@@ -1,0 +1,131 @@
+body {
+  background: url('images/jungle.png') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 56px;
+  text-shadow: 2px 2px 8px #21560d, 0 0 2px #000, 0 0 1px #fff;
+  -webkit-text-stroke: 1px #a5aca3;
+          text-shadow: 1px #b8bab8;
+  transition: text-shadow 0.2s;
+}
+
+header, footer {
+    font-family: 'Pacifico', cursive;
+  color: rgb(2, 23, 2);
+  padding: 20px;
+  background: none; 
+  text-shadow: 2px 2px 8px #21560d, 0 0 2px #000, 0 0 1px #fff;
+  -webkit-text-stroke: 0.3px #a5aca3;
+          text-shadow: 0.3px #b8bab8;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+.animal {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.animal:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+  main {
+    gap: 8px;
+    padding: 10px;
+  }
+}
+.animal-wrapper { 
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+.key-badge {  
+  position: absolute;
+  top: 8px;
+  left: 3px;
+  background: none;
+  color: #dfdfd0;
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 3px 10px;
+  z-index: 2; 
+  pointer-events: none; /* מאפשר קליק על התמונה */
+  letter-spacing: 1px;
+}
+
+
+/* הודעה קופצת בפתיחת העמוד */
+.modal {
+  position: fixed;
+  z-index: 99;
+  left: 0; top: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(30,60,20,0.82);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.welcome-content {  
+  width: 90%;
+  background: #e2ffd4;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px #2228;
+  padding: 35px 40px 30px 40px;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+}
+#startMusic { /*lest go*/
+  background: #4caf50;
+  color: #fffbe0;
+  font-size: 1.1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 14px;
+  padding: 14px 35px;
+  margin-top: 22px;
+  box-shadow: 0 2px 6px #0003;
+  cursor: pointer;
+  font-family: 'Pacifico', cursive;
+  
+}
+#startMusic:hover {
+  background: #2e8c35;
+}
+
+footer {
+  font-family: 'Pacifico', cursive;
+  color: rgb(2, 23, 2);
+  padding: 24px;
+  background: none; 
+  text-shadow: 2px 2px 8px #21560d, 0 0 2px #000, 0 0 1px #fff;
+  -webkit-text-stroke: 0.3px #a5aca3;
+          text-shadow: 0.3px #b8bab8;
+}
+
