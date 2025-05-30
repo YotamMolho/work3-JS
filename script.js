@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() { // הודעה קופ�
 
   btn.addEventListener('click', function() { // מנגן בלחיצה על כפתור LET'S GO 
     if (!bgMusic) {
-      bgMusic = new Audio('sounds/jungle.mp3');
+      bgMusic = new Audio('/sounds/jungle.mp3');
       bgMusic.volume = 0.4;
       bgMusic.play();
     }
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() { // הודעה קופ�
 
 //השמעת קול של חיה 
 function playAnimalSound(jungle) {
-  const sound = new Audio(`sounds/jungle.mp3`);
+  const sound = new Audio(`sounds/${jungle}.mp3`);
   sound.play();
 }
 
