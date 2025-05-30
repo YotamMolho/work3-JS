@@ -121,8 +121,8 @@ main {
 
 footer {
   font-family: 'Pacifico', cursive;
-  color: rgb(2, 23, 2);
-  padding: 24px;
+  color: rgb(0, 0, 0);
+  padding: 34px;
   background: none; 
   text-shadow: 2px 2px 8px #21560d, 0 0 2px #000, 0 0 1px #fff;
   -webkit-text-stroke: 0.3px #a5aca3;
