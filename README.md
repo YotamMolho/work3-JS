@@ -1,6 +1,6 @@
 # Jungle Sounds Website
 
-This project is a web-based interactive jungle experience, created as part of the **WEB course** at [Your Institution/University Name].
+This project is a web-based interactive jungle experience, created as part of the **WEB course** at Ben Gurion University.
 
 ## Project Description
 
